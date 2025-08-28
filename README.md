@@ -25,15 +25,10 @@ Note: I did not develop the base applications. My focus was on creating Dockerfi
 
 ### 1️⃣ Calculator Project
 
-This is a simple **JavaScript Calculator** web application.  
-I did not develop the core application from scratch — instead, I practiced **Docker** by containerizing it.
+- Simple Calculator web app built with **HTML, CSS, JavaScript**.  
+- Dockerized using **nginx:alpine** as the base image.
 
-## Features
-- Basic arithmetic operations (Add, Subtract, Multiply, Divide).
-- Built with **HTML, CSS, and JavaScript**.
-- Dockerized using **nginx:alpine**.
-
-## Run with Docker
-```bash
-docker build -t calculator .
-docker run -d -p 8080:80 calculator
+## Steps to Run
+  ```bash
+  docker build -t calculator .
+  docker run -d -p 8080:80 calculator
