@@ -22,3 +22,18 @@ Note: I did not develop the base applications. My focus was on creating Dockerfi
   ```bash
   docker build -t snake-game-2d .
   docker run -d -p 8080:80 snake-game-2d
+
+### 1️⃣ Calculator Project
+
+This is a simple **JavaScript Calculator** web application.  
+I did not develop the core application from scratch — instead, I practiced **Docker** by containerizing it.
+
+## Features
+- Basic arithmetic operations (Add, Subtract, Multiply, Divide).
+- Built with **HTML, CSS, and JavaScript**.
+- Dockerized using **nginx:alpine**.
+
+## Run with Docker
+```bash
+docker build -t calculator .
+docker run -d -p 8080:80 calculator
