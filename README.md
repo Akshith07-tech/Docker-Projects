@@ -27,8 +27,7 @@ Note: I did not develop the base applications. My focus was on creating Dockerfi
 
 - Simple Calculator web app built with **HTML, CSS, JavaScript**.  
 - Dockerized using **nginx:alpine** as the base image.
-
-## Steps to Run
+- Steps:
   ```bash
   docker build -t calculator .
   docker run -d -p 8080:80 calculator
