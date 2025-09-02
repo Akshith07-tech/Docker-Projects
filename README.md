@@ -1,33 +1,70 @@
-# 🚀 Docker-Projects  
+# 🚀 Docker Projects
 
-This repository contains **Docker practice projects**.  
-The applications inside were forked from open-source projects, but the main focus here is on:  
+This repository contains multiple small projects that I am practicing with Docker.  
+⚠️ **Note:** I did not develop these applications. They are **forked/cloned from open-source repositories** and containerized for learning Docker.
 
-- Writing **Dockerfiles**  
-- Building Docker **images**  
-- Running applications in **containers**  
-- Exposing ports and accessing apps via browser  
-- Organizing multiple Dockerized projects in one repo  
-
-Note: I did not develop the base applications. My focus was on creating Dockerfiles and containerizing them as part of my Docker practice. 
+Each project is organized in its own folder.
 
 ---
 
-## 📂 Projects  
+## 📌 1. Snake Game 2D
 
-### 1️⃣ SnakeGame-2D  
-- Simple 2D Snake Game built with **HTML, CSS, JavaScript**  
-- Dockerized using **nginx:alpine** as the base image  
-- Steps:  
-  ```bash
-  docker build -t snake-game-2d .
-  docker run -d -p 8080:80 snake-game-2d
+A **classic Snake Game** built with JavaScript, containerized with Nginx in Docker.
 
-### 1️⃣ Calculator Project
+### 🔧 How to Run
+```bash
+docker build -t snake-game .
+```
+```bash
+docker run -d -p 8081:80 snake-game
+```
 
-- Simple Calculator web app built with **HTML, CSS, JavaScript**.  
-- Dockerized using **nginx:alpine** as the base image.
-- Steps:
-  ```bash
-  docker build -t calculator .
-  docker run -d -p 8080:80 calculator
+---
+
+## 📌 2. Calculator Web App
+
+A **simple Calculator app** built with HTML, CSS, and JavaScript, served with Nginx in Docker.
+
+### 🔧 How to Run
+```bash
+docker build -t calculator-app .
+```
+```bash
+docker run -d -p 8082:80 calculator-app
+```
+
+---
+
+## 📌 3. Django ToDo App
+
+A simple **Django-based ToDo application**, containerized with Docker.
+
+### 🔧 How to Run
+```bash
+docker build -t django-todo .
+```
+```bash
+docker run -d -p 8000:8000 django-todo
+```
+
+---
+
+## 📌 4. Java Quotes App
+
+A **Java-based Quotes generator application**, containerized with Docker.
+
+### 🔧 How to Run
+```bash
+docker build -t java-quotes-app .
+```
+```bash
+docker run -d -p 8000:8000 java-quotes-app
+```
+
+---
+
+## 📖 Notes
+- These projects are for **practice and learning Docker**.  
+- ⚠️ **I did not develop these apps.** They are forked/cloned to practice Dockerizing applications.  
+- Each project runs in its **own container** and is independent.
+
